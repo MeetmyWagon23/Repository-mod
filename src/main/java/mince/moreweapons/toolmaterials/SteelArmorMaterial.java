@@ -32,23 +32,24 @@ public class SteelArmorMaterial implements ArmorMaterial {
         return SoundEvents.ITEM_ARMOR_EQUIP_IRON;
     }
 
-    @Override
-    public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ItemsInit.STEEL_INGOT);
-    }
 
-    @Override
-    public String getName() {
-        return "steel";
-    }
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.ofItems(ItemsInit.STEEL_INGOT);
+        }
 
-    @Override
-    public float getToughness() {
-        return 1.5f;
-    }
+        @Override
+        public String getName() {
+            return "steel";
+        }
 
-    @Override
-    public float getKnockbackResistance() {
-        return 0.5f;
+        @Override
+        public float getToughness() {
+            return 1.5f;
+        }
+
+        @Override
+        public float getKnockbackResistance() {
+            return 0.5f;
+        }
     }
-}
