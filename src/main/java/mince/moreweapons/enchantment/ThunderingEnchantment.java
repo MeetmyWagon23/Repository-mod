@@ -1,5 +1,6 @@
 package mince.moreweapons.enchantment;
 
+import mince.moreweapons.MoreWeapons;
 import mince.moreweapons.api.ChanceUtil;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
@@ -16,7 +17,7 @@ import net.minecraft.util.registry.Registry;
     public class ThunderingEnchantment extends Enchantment {
         protected ThunderingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
             super(weight, type, slotTypes);
-            ThunderingEnchantment register = Registry.register(Registry.ENCHANTMENT, ("Thundering"), this);
+            ThunderingEnchantment register = Registry.register(Registry.ENCHANTMENT, MoreWeapons.ID("thundering"), this);
         }
 
         @Override

@@ -1,6 +1,8 @@
 package mince.moreweapons;
 
 import mince.moreweapons.enchantment.EnchantRegistry;
+import mince.moreweapons.init.ItemsInit;
+import mince.moreweapons.init.WeaponsInit;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -14,7 +16,6 @@ public class MoreWeapons implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
-
 	public static Identifier ID(String name){
 		return new Identifier("moreweapons", name);
 	}
@@ -26,10 +27,8 @@ public class MoreWeapons implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		EnchantRegistry.init();
-		/*public static void init () {
-			ItemsInit.init();
-			WeaponsInit.init();
-		}
-		 */
+		WeaponsInit.init();
+		ItemsInit.init();
+		//ArmorInit.init();
 	}
 }
