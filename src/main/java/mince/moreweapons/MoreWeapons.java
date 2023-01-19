@@ -10,7 +10,9 @@ public class MoreWeapons implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("mod_id");
+	public static final String MOD_ID = "moreweapons";
+
+	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
 
 	public static Identifier ID(String name){
@@ -24,6 +26,10 @@ public class MoreWeapons implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		EnchantRegistry.init();
+		/*public static void init () {
+			ItemsInit.init();
+			WeaponsInit.init();
+		}
+		 */
 	}
-
 }
