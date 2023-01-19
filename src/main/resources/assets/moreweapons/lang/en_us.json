@@ -1,5 +1,14 @@
 {
   "item.moreweapons.steel_sword": "Steel Sword",
   "item.moreweapons.steel_ingot": "Steel ingot",
-  "item.moreweapons.steel_pickaxe": "Steel Pickaxe"
+  "item.moreweapons.steel_pickaxe": "Steel Pickaxe",
+  "item.moreweapons.steel_shovel": "Steel Shovel",
+  "item.moreweapons.steel_axe": "Steel Axe",
+  "item.moreweapons.steel_hoe": "Steel Hoe",
+  "item.moreweapons.steel_helmet": "Steel Helmet",
+  "item.moreweapons.steel_chestplate": "Steel Chestplate",
+  "item.moreweapons.steel_leggings": "Steel Leggings",
+  "item.moreweapons.steel_boots": "Steel Boots",
+  "enchantment.moreweapons.thundering": "Thundering",
+  "enchantment.moreweapons.poisoning": "Poisoning"
 }

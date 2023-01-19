@@ -25,7 +25,7 @@ public class ItemsInit {
     public static final Item STEEL_LEGGINGS = new ArmorItem(STEEL_AM, EquipmentSlot.LEGS, new Item.Settings());
     public static final Item STEEL_BOOTS = new ArmorItem(STEEL_AM, EquipmentSlot.FEET, new Item.Settings());
 
-    public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,7, -3.2f, new Item.Settings());
+    public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,7, -2.4f, new Item.Settings());
 
     public static void weaponsInit() {
         registerItem("steel_sword", STEEL_SWORD);
