@@ -17,7 +17,7 @@ import net.minecraft.util.registry.Registry;
     public class ThunderingEnchantment extends Enchantment {
         protected ThunderingEnchantment(Rarity weight, EnchantmentTarget type, EquipmentSlot[] slotTypes) {
             super(weight, type, slotTypes);
-            ThunderingEnchantment register = Registry.register(Registry.ENCHANTMENT, MoreWeapons.ID("thundering"), this);
+            Registry.register(Registry.ENCHANTMENT, MoreWeapons.ID("thundering"), this);
         }
 
         @Override
@@ -45,7 +45,7 @@ import net.minecraft.util.registry.Registry;
                     lightningEntity.setCosmetic(true);
                     lightningEntity.refreshPositionAfterTeleport(target.getX(), target.getY(), target.getZ());
                 }
-                target.playSound(SoundEvents.ENTITY_LIGHTNING_BOLT_IMPACT, 1.0f, 1.0f);
+                target.playSound(SoundEvents.ENTITY_LIGHTNING_BOLT_THUNDER, 1.0f, 1.0f);
                 target.damage(DamageSource.LIGHTNING_BOLT, 6.0f);
             }
             super.onTargetDamaged(user, target, level);
