@@ -1,6 +1,7 @@
 package mince.moreweapons;
 
 import mince.moreweapons.enchantment.EnchantRegistry;
+import mince.moreweapons.init.ItemsInit;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
@@ -12,11 +13,10 @@ public class MoreWeapons implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final String MOD_ID = "moreweapons";
 
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
-
+	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static Identifier ID(String name){
-		return new Identifier("moreweapons", name);
+		return new Identifier(MOD_ID, name);
 	}
 	@Override
 	public void onInitialize() {
@@ -26,10 +26,9 @@ public class MoreWeapons implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		EnchantRegistry.init();
-		/*public static void init () {
-			ItemsInit.init();
-			WeaponsInit.init();
-		}
-		 */
+		ItemsInit.weaponsInit();
+		ItemsInit.toolsInit();
+		ItemsInit.itemsInit();
+		ItemsInit.armorsInit();
 	}
 }

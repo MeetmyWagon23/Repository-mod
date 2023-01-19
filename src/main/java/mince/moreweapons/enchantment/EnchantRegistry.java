@@ -13,5 +13,6 @@ public class EnchantRegistry {
                 new EquipmentSlot[]{EquipmentSlot.MAINHAND});
         POISONING = new PoisoningEnchantment(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON,
                 new EquipmentSlot[]{EquipmentSlot.MAINHAND});
+
     }
 }
