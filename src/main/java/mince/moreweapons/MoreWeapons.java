@@ -13,6 +13,10 @@ public class MoreWeapons implements ModInitializer {
 
 	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
+
+	public static Identifier ID(String name){
+		return new Identifier("moreweapons", name);
+	}
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
