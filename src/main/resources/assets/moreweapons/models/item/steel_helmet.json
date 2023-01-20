@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "moreweapons:steel/armor/steel_helmet"
+    "layer0": "moreweapons:steel/item/steel_helmet"
   }
 }
