@@ -2,6 +2,7 @@ package mince.moreweapons.init;
 
 import mince.moreweapons.MoreWeapons;
 import mince.moreweapons.items.MoreWeaponsHoe;
+import mince.moreweapons.items.SteelBowItem;
 import mince.moreweapons.toolmaterials.SteelArmorMaterial;
 import mince.moreweapons.toolmaterials.SteelToolMaterial;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -26,15 +27,19 @@ public class ItemsInit {
     public static final Item STEEL_BOOTS = new ArmorItem(STEEL_AM, EquipmentSlot.FEET, new Item.Settings());
 
     public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,7, -2.4f, new Item.Settings());
+    public static final Item STEEL_BOW = new SteelBowItem(new Item.Settings(), 35);
 
     public static void weaponsInit() {
         registerItem("steel_sword", STEEL_SWORD);
     }
 
-
     public static void itemsInit() {
         registerItem("steel_ingot", STEEL_INGOT);
+        registerItem("steel_bow", STEEL_BOW);
+
+
     }
+
 
     public static void toolsInit() {
         registerItem("steel_pickaxe", STEEL_PICKAXE);
