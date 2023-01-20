@@ -10,11 +10,11 @@ import net.minecraft.sound.SoundEvents;
 public class SteelArmorMaterial implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};
-    private static final int[] PROTECTION = new int[]{3, 6, 8, 3};
+    private static final int[] PROTECTION = new int[]{2, 5, 6, 2};
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 23;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 1151;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class SteelArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 20;
+        return 5;
     }
 
     @Override
@@ -45,11 +45,11 @@ public class SteelArmorMaterial implements ArmorMaterial {
 
         @Override
         public float getToughness() {
-            return 1.5f;
+            return 1.0f;
         }
 
         @Override
         public float getKnockbackResistance() {
-            return 0.5f;
+            return 0.1f;
         }
     }
