@@ -1,6 +1,7 @@
 package mince.moreweapons.enchantment;
 
 import mince.moreweapons.MoreWeapons;
+import net.minecraft.enchantment.DamageEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.Entity;
@@ -16,10 +17,19 @@ public class PoisoningEnchantment extends Enchantment {
         Registry.register(Registry.ENCHANTMENT, MoreWeapons.ID("poisoning"), this);
 
     }
+
+    @Override
+    public int getMaxLevel() {
+        return 3;
+    }
+    @Override
+    protected boolean canAccept(Enchantment other) {
+        return !(other instanceof DamageEnchantment);
+    }
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level){
         if(target instanceof LivingEntity livingEntity){
-            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 200, 1, true, false));
+            livingEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 60 +(40*(level-1)), level-1, true, true));
         }
         super.onTargetDamaged(user, target, level);
     }

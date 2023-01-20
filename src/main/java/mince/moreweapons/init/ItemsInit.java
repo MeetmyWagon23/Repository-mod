@@ -11,22 +11,22 @@ import net.minecraft.item.*;
 import net.minecraft.util.registry.Registry;
 
 public class ItemsInit {
-    public static final Item STEEL_INGOT = new Item(new FabricItemSettings());
+    public static final Item STEEL_INGOT = new Item(new FabricItemSettings().group(ItemGroup.MATERIALS));
 
     public static final SteelToolMaterial STEEL_TM = new SteelToolMaterial();
     public static final SteelArmorMaterial STEEL_AM = new SteelArmorMaterial();
 
-    public static ToolItem STEEL_PICKAXE = new PickaxeItem(STEEL_TM,1, 2f, new Item.Settings());
-    public static ToolItem STEEL_AXE = new AxeItem(STEEL_TM,1, 2f, new Item.Settings());
-    public static ToolItem STEEL_SHOVEL = new ShovelItem(STEEL_TM,1, 2f, new Item.Settings());
-    public static ToolItem STEEL_HOE = new MoreWeaponsHoe(STEEL_TM,1, 2f, new Item.Settings());
+    public static ToolItem STEEL_PICKAXE = new PickaxeItem(STEEL_TM,3, 2f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static ToolItem STEEL_AXE = new AxeItem(STEEL_TM,7, 2f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static ToolItem STEEL_SHOVEL = new ShovelItem(STEEL_TM,3, 3.4f, new Item.Settings().group(ItemGroup.TOOLS));
+    public static ToolItem STEEL_HOE = new MoreWeaponsHoe(STEEL_TM,2, 2f, new Item.Settings().group(ItemGroup.TOOLS));
 
-    public static final Item STEEL_HELMET = new ArmorItem(STEEL_AM, EquipmentSlot.HEAD, new Item.Settings());
-    public static final Item STEEL_CHESTPLATE = new ArmorItem(STEEL_AM, EquipmentSlot.CHEST, new Item.Settings());
-    public static final Item STEEL_LEGGINGS = new ArmorItem(STEEL_AM, EquipmentSlot.LEGS, new Item.Settings());
-    public static final Item STEEL_BOOTS = new ArmorItem(STEEL_AM, EquipmentSlot.FEET, new Item.Settings());
+    public static final Item STEEL_HELMET = new ArmorItem(STEEL_AM, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item STEEL_CHESTPLATE = new ArmorItem(STEEL_AM, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item STEEL_LEGGINGS = new ArmorItem(STEEL_AM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item STEEL_BOOTS = new ArmorItem(STEEL_AM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
 
-    public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,7, -2.4f, new Item.Settings());
+    public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,6, -2.4f, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item STEEL_BOW = new SteelBowItem(new Item.Settings(), 35);
 
     public static void weaponsInit() {
