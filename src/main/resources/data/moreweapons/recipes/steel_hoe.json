@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mm",
+    "/ ",
+    "/ "
+  ],
+  "key": {
+    "m": {
+      "item": "moreweapons:steel_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "moreweapons:steel_hoe",
+    "count": 1
+  }
+}

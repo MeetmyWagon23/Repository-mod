@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "moreweapons:unrefined_steel_ingot"
+    },
+    "result": "moreweapons:steel_ingot",
+    "experience": 0.3,
+    "cookingtime": 200
+}

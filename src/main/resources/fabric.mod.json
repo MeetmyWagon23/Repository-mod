@@ -20,7 +20,11 @@
   "entrypoints": {
     "main": [
       "mince.moreweapons.MoreWeapons"
+    ],
+    "client":[
+      "mince.moreweapons.client.MoreWeaponsClient"
     ]
+
   },
   "mixins": [
     "modid.mixins.json"

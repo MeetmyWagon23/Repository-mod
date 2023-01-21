@@ -25,9 +25,10 @@ public class ItemsInit {
     public static final Item STEEL_CHESTPLATE = new ArmorItem(STEEL_AM, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item STEEL_LEGGINGS = new ArmorItem(STEEL_AM, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
     public static final Item STEEL_BOOTS = new ArmorItem(STEEL_AM, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item UNREFINED_STEEL_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 
     public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,6, -2.4f, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item STEEL_BOW = new SteelBowItem(new Item.Settings(), 35);
+    public static final Item STEEL_BOW = new SteelBowItem(new Item.Settings().group(ItemGroup.COMBAT), 35);
 
     public static void weaponsInit() {
         registerItem("steel_sword", STEEL_SWORD);
@@ -35,6 +36,7 @@ public class ItemsInit {
 
     public static void itemsInit() {
         registerItem("steel_ingot", STEEL_INGOT);
+        registerItem("unrefined_steel_ingot", UNREFINED_STEEL_INGOT);
         registerItem("steel_bow", STEEL_BOW);
 
 
