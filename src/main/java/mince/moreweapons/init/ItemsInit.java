@@ -28,7 +28,7 @@ public class ItemsInit {
     public static final Item UNREFINED_STEEL_INGOT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
 
     public static final SwordItem STEEL_SWORD = new SwordItem(STEEL_TM,6, -2.4f, new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item STEEL_BOW = new SteelBowItem(new Item.Settings().group(ItemGroup.COMBAT), 35);
+    public static final Item STEEL_BOW = new SteelBowItem(new Item.Settings().maxCount(1).group(ItemGroup.COMBAT), 35);
 
     public static void weaponsInit() {
         registerItem("steel_sword", STEEL_SWORD);

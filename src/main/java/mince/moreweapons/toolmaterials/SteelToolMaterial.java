@@ -8,7 +8,7 @@ public class SteelToolMaterial implements ToolMaterial {
 
     @Override
     public int getDurability() {
-        return 2000;
+        return 1261;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class SteelToolMaterial implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 5;
+        return 3;
     }
 
     @Override

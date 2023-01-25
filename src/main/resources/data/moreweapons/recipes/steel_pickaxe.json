@@ -1,12 +1,12 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "mmm",
-    "/",
-    "/"
+    "iii",
+    " / ",
+    " / "
   ],
   "key": {
-    "m": {
+    "i": {
       "item": "moreweapons:steel_ingot"
     },
     "/": {

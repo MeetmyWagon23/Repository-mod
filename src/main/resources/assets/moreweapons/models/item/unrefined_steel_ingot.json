@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "moreweapons:steel/item/unrefined_steel_ingot"
+  }
+}

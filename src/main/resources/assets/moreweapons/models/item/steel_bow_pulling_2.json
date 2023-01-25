@@ -1,6 +1,6 @@
 {
   "parent": "item/bow",
   "textures": {
-    "layer0": "moreweapons:textures/steel/item/steel_bow_pulling_2"
+    "layer0": "moreweapons:steel/item/steel_bow_pulling_2"
   }
 }

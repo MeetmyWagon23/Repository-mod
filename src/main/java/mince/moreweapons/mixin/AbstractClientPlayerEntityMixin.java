@@ -26,10 +26,11 @@ public class AbstractClientPlayerEntityMixin {
                 int i = abstractPlayer.getItemUseTime();
                 float g = (float)i / 20.0f;
                 g = g > 1.0f ? 1.0f : (g *= g);
-                f *= 1.0f - g * 0.15f;
+                f *= 1.0f - g * 0.5f;
 
-                cir.setReturnValue(MathHelper.lerp(MinecraftClient.getInstance().options.getFovEffectScale().getValue().floatValue(), 1.0F, 0.3f));
+                cir.setReturnValue(MathHelper.lerp(MinecraftClient.getInstance().options.getFovEffectScale().getValue().floatValue(), 1.0F, f*1f));
             }
         }
     }
 }
+//MathHelper.clamp(f*1.1f,0.3f,.3f)

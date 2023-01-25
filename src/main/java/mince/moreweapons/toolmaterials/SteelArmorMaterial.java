@@ -14,7 +14,7 @@ public class SteelArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 1151;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 28;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class SteelArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getEnchantability() {
-        return 5;
+        return 1;
     }
 
     @Override
@@ -50,6 +50,6 @@ public class SteelArmorMaterial implements ArmorMaterial {
 
         @Override
         public float getKnockbackResistance() {
-            return 0.1f;
+            return 0.5f;
         }
     }
