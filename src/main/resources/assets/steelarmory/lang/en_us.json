@@ -1,0 +1,16 @@
+{
+  "item.steelarmory.steel_sword": "Steel Sword",
+  "item.steelarmory.steel_ingot": "Steel Ingot",
+  "item.steelarmory.unrefined_steel_ingot": "Unrefined Steel Ingot",
+  "item.steelarmory.steel_pickaxe": "Steel Pickaxe",
+  "item.steelarmory.steel_shovel": "Steel Shovel",
+  "item.steelarmory.steel_axe": "Steel Axe",
+  "item.steelarmory.steel_hoe": "Steel Hoe",
+  "item.steelarmory.steel_helmet": "Steel Helmet",
+  "item.steelarmory.steel_chestplate": "Steel Chestplate",
+  "item.steelarmory.steel_leggings": "Steel Leggings",
+  "item.steelarmory.steel_boots": "Steel Boots",
+  "item.steelarmory.steel_bow": "Steel Bow",
+  "enchantment.steelarmory.thundering": "Thundering",
+  "enchantment.steelarmory.poisoning": "Poisoning"
+}

@@ -1,14 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "mince.moreweapons.mixin",
+  "package": "mince.steelarmory.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "LivingEntityAccessor"
   ],
   "client": [
     "AbstractClientPlayerEntityMixin",
-    "MoreWeaponsMixin"
+    "SteelArmoryMixin"
   ],
   "injectors": {
     "defaultRequire": 1

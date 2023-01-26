@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "mmm",
+    "m m"
+  ],
+  "key": {
+    "m": {
+      "item": "steelarmory:steel_ingot"
+    }
+  },
+  "result": {
+    "item": "steelarmory:steel_helmet",
+    "count": 1
+  }
+}

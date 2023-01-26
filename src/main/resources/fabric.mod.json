@@ -3,7 +3,7 @@
   "id": "modid",
   "version": "${version}",
 
-  "name": "More Weapons",
+  "name": "Steel Armory",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Me!"
@@ -14,15 +14,15 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/icon.jpg",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "mince.moreweapons.MoreWeapons"
+      "mince.steelarmory.SteelArmory"
     ],
     "client":[
-      "mince.moreweapons.client.MoreWeaponsClient"
+      "mince.steelarmory.client.SteelArmoryClient"
     ]
 
   },

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " mS",
+    "mFS",
+    " mS"
+  ],
+  "key": {
+    "m": {
+      "item": "steelarmory:steel_ingot"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "F": {
+      "item": "minecraft:spyglass"
+    }
+  },
+  "result": {
+    "item": "steelarmory:steel_bow",
+    "count": 1
+  }
+}

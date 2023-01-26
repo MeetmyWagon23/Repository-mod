@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "mm",
+    "/ ",
+    "/ "
+  ],
+  "key": {
+    "m": {
+      "item": "steelarmory:steel_ingot"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "steelarmory:steel_hoe",
+    "count": 1
+  }
+}

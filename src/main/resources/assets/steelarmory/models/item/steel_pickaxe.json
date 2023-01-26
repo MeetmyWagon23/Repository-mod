@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "steelarmory:steel/tool/steel_pickaxe"
+  }
+}

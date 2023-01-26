@@ -1,0 +1,6 @@
+{
+  "parent": "item/bow",
+  "textures": {
+    "layer0": "steelarmory:steel/item/steel_bow_pulling_0"
+  }
+}

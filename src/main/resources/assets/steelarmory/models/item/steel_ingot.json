@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "steelarmory:steel/item/steel_ingot"
+  }
+}
