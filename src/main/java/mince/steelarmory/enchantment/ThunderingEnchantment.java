@@ -29,8 +29,7 @@ public class ThunderingEnchantment extends Enchantment {
     @Override
     public boolean isAcceptableItem(ItemStack stack) {
         return (super.isAcceptableItem(stack)
-                && ((SwordItem) stack.getItem()).getMaterial() == ToolMaterials.NETHERITE)
-                || stack.getItem() instanceof AxeItem;
+                && stack.getItem() instanceof AxeItem) || stack.getItem() instanceof SwordItem;
     }
 
     @Override
@@ -41,7 +40,7 @@ public class ThunderingEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (target instanceof LivingEntity le && user instanceof ServerPlayerEntity) {
-            if (ChanceUtil.percentChance(100)) {
+            if (ChanceUtil.percentChance(30)) {
                 LightningEntity lightningEntity = EntityType.LIGHTNING_BOLT.create(le.getEntityWorld());
                 if (lightningEntity != null) {
                     lightningEntity.setCosmetic(true);
